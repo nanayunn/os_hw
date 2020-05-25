@@ -1,0 +1,134 @@
+select(4, [3], [], [], {tv_sec=0, tv_usec=319480}) = 0 (Timeout)
+select(4, [3], [], [], {tv_sec=0, tv_usec=500000}) = 0 (Timeout)
+select(4, [3], [], [], {tv_sec=0, tv_usec=500000}) = 0 (Timeout)
+select(4, [3], [], [], {tv_sec=0, tv_usec=500000}) = 0 (Timeout)
+select(4, [3], [], [], {tv_sec=0, tv_usec=500000}) = 0 (Timeout)
+select(4, [3], [], [], {tv_sec=0, tv_usec=500000}) = 0 (Timeout)
+select(4, [3], [], [], {tv_sec=0, tv_usec=500000}) = 0 (Timeout)
+select(4, [3], [], [], {tv_sec=0, tv_usec=500000}) = 0 (Timeout)
+select(4, [3], [], [], {tv_sec=0, tv_usec=500000}) = 0 (Timeout)
+select(4, [3], [], [], {tv_sec=0, tv_usec=500000}) = 0 (Timeout)
+select(4, [3], [], [], {tv_sec=0, tv_usec=500000}) = 0 (Timeout)
+select(4, [3], [], [], {tv_sec=0, tv_usec=500000}) = 0 (Timeout)
+select(4, [3], [], [], {tv_sec=0, tv_usec=500000}) = 0 (Timeout)
+select(4, [3], [], [], {tv_sec=0, tv_usec=500000}) = 0 (Timeout)
+select(4, [3], [], [], {tv_sec=0, tv_usec=500000}) = 0 (Timeout)
+select(4, [3], [], [], {tv_sec=0, tv_usec=500000}) = 0 (Timeout)
+select(4, [3], [], [], {tv_sec=0, tv_usec=500000}) = 0 (Timeout)
+select(4, [3], [], [], {tv_sec=0, tv_usec=500000}) = 0 (Timeout)
+select(4, [3], [], [], {tv_sec=0, tv_usec=500000}) = 0 (Timeout)
+select(4, [3], [], [], {tv_sec=0, tv_usec=500000}) = 0 (Timeout)
+select(4, [3], [], [], {tv_sec=0, tv_usec=500000}) = 0 (Timeout)
+select(4, [3], [], [], {tv_sec=0, tv_usec=500000}) = 0 (Timeout)
+select(4, [3], [], [], {tv_sec=0, tv_usec=500000}) = 0 (Timeout)
+select(4, [3], [], [], {tv_sec=0, tv_usec=500000}) = 0 (Timeout)
+select(4, [3], [], [], {tv_sec=0, tv_usec=500000}) = 0 (Timeout)
+select(4, [3], [], [], {tv_sec=0, tv_usec=500000}) = 1 (in [3], left {tv_sec=0, tv_usec=222127})
+accept(3, {sa_family=AF_INET, sin_port=htons(46998), sin_addr=inet_addr("127.0.0.1")}, [16]) = 4
+recvfrom(4, "GET / HTTP/1.1\r\nUser-Agent: Wget"..., 8192, 0, NULL, NULL) = 141
+getcwd("/root/web", 1024)               = 10
+stat("/root/web/", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/root/web/index.html", {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+openat(AT_FDCWD, "/root/web/index.html", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=127, ...}) = 0
+write(2, "127.0.0.1 - - [25/May/2020 00:02"..., 60) = 60
+sendto(4, "HTTP/1.0 200 OK\r\n", 17, 0, NULL, 0) = 17
+sendto(4, "Server: SimpleHTTP/0.6 Python/2."..., 38, 0, NULL, 0) = 38
+sendto(4, "Date: Mon, 25 May 2020 00:02:45 "..., 37, 0, NULL, 0) = 37
+sendto(4, "Content-type: text/html\r\n", 25, 0, NULL, 0) = 25
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+sendto(4, "Content-Length: 0\r\n", 19, 0, NULL, 0) = 19
+sendto(4, "Last-Modified: Sun, 24 May 2020 "..., 46, 0, NULL, 0) = 46
+sendto(4, "\r\n", 2, 0, NULL, 0)        = 2
+fstat(5, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+read(5, "", 16384)                      = 0
+close(5)                                = 0
+shutdown(4, SHUT_WR)                    = 0
+close(4)                                = 0
+select(4, [3], [], [], {tv_sec=0, tv_usec=500000}) = 0 (Timeout)
+select(4, [3], [], [], {tv_sec=0, tv_usec=500000}) = 0 (Timeout)
+select(4, [3], [], [], {tv_sec=0, tv_usec=500000}) = 0 (Timeout)
+select(4, [3], [], [], {tv_sec=0, tv_usec=500000}) = 0 (Timeout)
+select(4, [3], [], [], {tv_sec=0, tv_usec=500000}) = 0 (Timeout)
+select(4, [3], [], [], {tv_sec=0, tv_usec=500000}) = 0 (Timeout)
+select(4, [3], [], [], {tv_sec=0, tv_usec=500000}) = 0 (Timeout)
+select(4, [3], [], [], {tv_sec=0, tv_usec=500000}) = 0 (Timeout)
+select(4, [3], [], [], {tv_sec=0, tv_usec=500000}) = 0 (Timeout)
+select(4, [3], [], [], {tv_sec=0, tv_usec=500000}) = 0 (Timeout)
+select(4, [3], [], [], {tv_sec=0, tv_usec=500000}) = 0 (Timeout)
+select(4, [3], [], [], {tv_sec=0, tv_usec=500000}) = ? ERESTARTNOHAND (To be restarted if no handler)
+--- SIGINT {si_signo=SIGINT, si_code=SI_KERNEL} ---
+getpid()                                = 2784
+rt_sigreturn({mask=[]})                 = -1 EINTR (Interrupted system call)
+write(2, "Traceback (most recent call last"..., 35) = 35
+write(2, "  File \"/usr/lib/python2.7/runpy"..., 71) = 71
+openat(AT_FDCWD, "/usr/lib/python2.7/runpy.py", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=11081, ...}) = 0
+read(4, "\"\"\"runpy.py - locating and runni"..., 4096) = 4096
+read(4, " except ImportError, e:\n        "..., 4096) = 4096
+write(2, "    ", 4)                     = 4
+write(2, "\"__main__\", fname, loader, pkg_n"..., 37) = 37
+close(4)                                = 0
+write(2, "  File \"/usr/lib/python2.7/runpy"..., 60) = 60
+openat(AT_FDCWD, "/usr/lib/python2.7/runpy.py", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=11081, ...}) = 0
+read(4, "\"\"\"runpy.py - locating and runni"..., 4096) = 4096
+write(2, "    ", 4)                     = 4
+write(2, "exec code in run_globals\n", 25) = 25
+close(4)                                = 0
+write(2, "  File \"/usr/lib/python2.7/Simpl"..., 71) = 71
+openat(AT_FDCWD, "/usr/lib/python2.7/SimpleHTTPServer.py", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=7997, ...}) = 0
+read(4, "\"\"\"Simple HTTP Server.\n\nThis mod"..., 4096) = 4096
+read(4, "Directory listing for %s</h2>\\n\""..., 4096) = 3901
+write(2, "    ", 4)                     = 4
+write(2, "test()\n", 7)                 = 7
+close(4)                                = 0
+write(2, "  File \"/usr/lib/python2.7/Simpl"..., 67) = 67
+openat(AT_FDCWD, "/usr/lib/python2.7/SimpleHTTPServer.py", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=7997, ...}) = 0
+read(4, "\"\"\"Simple HTTP Server.\n\nThis mod"..., 4096) = 4096
+read(4, "Directory listing for %s</h2>\\n\""..., 4096) = 3901
+write(2, "    ", 4)                     = 4
+write(2, "BaseHTTPServer.test(HandlerClass"..., 47) = 47
+close(4)                                = 0
+write(2, "  File \"/usr/lib/python2.7/BaseH"..., 65) = 65
+openat(AT_FDCWD, "/usr/lib/python2.7/BaseHTTPServer.py", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=22747, ...}) = 0
+read(4, "\"\"\"HTTP server base class.\n\nNote"..., 4096) = 4096
+read(4, "the request type and path\n    2."..., 4096) = 4096
+read(4, "be stored in self.raw_requestlin"..., 4096) = 4096
+read(4, "           self.log_error(\"Reque"..., 4096) = 4096
+read(4, "    The first argument, FORMAT, "..., 4096) = 4096
+read(4, "ot Found', 'Nothing matches the "..., 4096) = 2267
+write(2, "    ", 4)                     = 4
+write(2, "httpd.serve_forever()\n", 22) = 22
+close(4)                                = 0
+write(2, "  File \"/usr/lib/python2.7/Socke"..., 72) = 72
+openat(AT_FDCWD, "/usr/lib/python2.7/SocketServer.py", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=23948, ...}) = 0
+read(4, "\"\"\"Generic socket server classes"..., 4096) = 4096
+read(4, "service) is to maintain an\nexpli"..., 4096) = 4096
+write(2, "    ", 4)                     = 4
+write(2, "poll_interval)\n", 15)        = 15
+close(4)                                = 0
+write(2, "  File \"/usr/lib/python2.7/Socke"..., 71) = 71
+openat(AT_FDCWD, "/usr/lib/python2.7/SocketServer.py", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=23948, ...}) = 0
+read(4, "\"\"\"Generic socket server classes"..., 4096) = 4096
+read(4, "service) is to maintain an\nexpli"..., 4096) = 4096
+write(2, "    ", 4)                     = 4
+write(2, "return func(*args)\n", 19)    = 19
+close(4)                                = 0
+write(2, "KeyboardInterrupt", 17)       = 17
+write(2, "\n", 1)                       = 1
+rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f9a7f00ff20}, {sa_handler=0x5572ff98a220, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f9a7f00ff20}, 8) = 0
+close(3)                                = 0
+close(7)                                = 0
+futex(0x7f9a7ddad948, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...}) = 0
+fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...}) = 0
+fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...}) = 0
+exit_group(1)                           = ?
++++ exited with 1 +++
